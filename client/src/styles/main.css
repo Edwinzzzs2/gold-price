@@ -1,0 +1,103 @@
+/* 添加响应式布局基础样式 */
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* 图表容器样式 */
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  touch-action: none;
+}
+
+/* 表格容器样式 */
+.table-wrapper {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+/* 标题样式 */
+.chart-title,
+.table-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #409EFF;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .chart-container {
+    height: 350px;
+  }
+  
+  .chart-title,
+  .table-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .table-wrapper {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  /* 优化移动端表格显示 */
+  .ant-table {
+    font-size: 14px;
+  }
+  
+  .ant-table-pagination {
+    margin: 16px 0 !important;
+  }
+
+  /* 优化价格走势图标题和时间范围控件 */
+  .card-header {
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between; /* 保持两端对齐 */
+  }
+
+  .time-range-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 减小间距 */
+    flex-wrap: wrap; /* 允许换行 */
+  }
+
+  .range-label {
+    font-size: 14px; /* 调整字体大小 */
+  }
+}
+
+/* 超小屏幕适配 */
+@media screen and (max-width: 375px) {
+  .chart-container {
+    height: 300px;
+  }
+  
+  .ant-table {
+    font-size: 13px;
+  }
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+  .chart-title,
+  .table-title {
+    color: #fff;
+  }
+  
+  .ant-table {
+    background-color: #1f1f1f;
+  }
+} 

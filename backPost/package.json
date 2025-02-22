@@ -1,0 +1,17 @@
+{
+  "name": "gold-price-scraper",
+  "version": "1.0.0",
+  "description": "A Node.js application to scrape gold prices and store them in a database.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+} 
