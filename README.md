@@ -3,12 +3,16 @@
 本地数据库库预先建立gold_prices_db表
 
 # 运行后端
+```
 cd backPost
 npm i
 npm run start
+```
 
 # 运行前端
+```
 cd  client
 npm i
 npm run dev
+```
 
