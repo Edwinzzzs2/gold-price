@@ -3,7 +3,7 @@
 本地数据库库预先建立gold_prices_db表
 
 # 体验地址
-https:gold.dolast.top:10010
+https://gold.dolast.top:10010
 
 # 运行后端
 ```
